@@ -16,7 +16,7 @@ return [
     'partials-sidebar-logout'               => 'Logout',
 
     // partials-topbar
-    'partials-topbar-title'                 => 'QuickAdmin en',
+    'partials-topbar-title'                 => 'DashBoard',
 
     // users-create
     'users-create-create_user'              => 'Create user',

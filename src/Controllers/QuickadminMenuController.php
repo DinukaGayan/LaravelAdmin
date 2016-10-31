@@ -30,6 +30,7 @@ class QuickadminMenuController extends Controller
             ->where('parent_id', null)
             ->orderBy('position')->get();
 
+        Session::flash('Title', 'Menu');
         return view('qa::menus.index', compact('menusList'));
     }
 

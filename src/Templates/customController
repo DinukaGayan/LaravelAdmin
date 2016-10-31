@@ -15,6 +15,7 @@ class $CLASS$ extends Controller {
 	 */
 	public function index()
     {
+    	Session::flash('Title', ucwords('$COLLECTION$'));
 		return view('admin.$COLLECTION$.index');
 	}
 
