@@ -14,7 +14,14 @@
 
             <div class="top-menu">
                 <ul class="nav navbar-nav pull-right">
-
+                    <li>
+                        {!! Form::open(['url' => 'logout']) !!}
+                        <button type="submit" class="logout">
+                            <i class="fa fa-sign-out fa-fw"></i>
+                            <span class="title">{{ trans('quickadmin::admin.partials-sidebar-logout') }}</span>
+                        </button>
+                        {!! Form::close() !!}
+                    </li>
                 </ul>
             </div>
         </div>
