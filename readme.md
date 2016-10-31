@@ -1,7 +1,17 @@
 Please Do not Download this Project.it is still on Testing
 
 
-Illuminate\Foundation\Auth\ResetsPasswords.php 
+
+Install the package via composer require laraveldaily/quickadmin.
+Add Laraveldaily\Quickadmin\QuickadminServiceProvider::class, to your \config\app.php providers after App\Providers\RouteServiceProvider::class, otherwise you will not be able to add new ones to freshly generated controllers.
+Configure your .env file with correct database information
+Run php artisan quickadmin:install and fill the required information.
+Register middleware 'role' => \Laraveldaily\Quickadmin\Middleware\HasPermissions::class, in your App\Http\Kernel.php at $routeMiddleware
+Access QuickAdmin panel by visiting http://yourdomain/admin.
+
+
+
+in Illuminate\Foundation\Auth\ResetsPasswords.php  replace following function .
 
 public function reset(Request $request)
     {
@@ -30,11 +40,6 @@ public function reset(Request $request)
                     ? $this->sendResetResponse($response)
                     : $this->sendResetFailedResponse($request, $response);
     }
-
-
-
-
-
 
 
 Searching 7165 files for "/home"
