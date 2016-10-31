@@ -1,0 +1,31 @@
+{
+  "name": "dinuka/quickadmin",
+  "description": "Package for creating Custom adminpanel in Laravel 5",
+  "license": "Dinuka Gayan",
+  "authors": [
+    
+  ],
+  "repositories": [
+	 {
+	 "type": "vcs",
+	 "url": "https://github.com/dinukz/QuickAdmin-Material.git"
+	 }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "laravel/framework": "5.3.*",
+    "laravelcollective/html": "^5.3",
+    "intervention/image": "^2.3",
+    "yajra/laravel-datatables-oracle": "^6.18"
+  },
+  "classmap": [
+    "src/Controllers",
+    "src/Cache",
+    "src/Models"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Laraveldaily\\Quickadmin\\": "src/"
+    }
+  }
+}
