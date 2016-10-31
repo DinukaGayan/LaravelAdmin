@@ -23,6 +23,8 @@ class RolesController extends Controller
      */
     public function index()
     {
+        Session::flash('Title', ucwords('Roles'));
+
         $roles = $this->roles->get();
 
         return view('admin.roles.index', compact('roles'));
