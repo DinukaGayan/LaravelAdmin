@@ -41,7 +41,7 @@
                 {data: 'action_model', name: 'action_model'},
                 {data: 'action_id', name: 'action_id'},
                 {data: 'created_at', name: 'created_at'},
-                {data: 'data', name: 'Data'}
+                {data: 'data', name: 'data'}
             ]
         });
     </script>
