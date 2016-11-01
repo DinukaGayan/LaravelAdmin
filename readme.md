@@ -1,12 +1,15 @@
 Please Do not Download this Project.it is still on Testing
 
 
+composer require dinuka/quickadmin.
 
-Install the package via composer require laraveldaily/quickadmin.
 Add Laraveldaily\Quickadmin\QuickadminServiceProvider::class, to your \config\app.php providers after App\Providers\RouteServiceProvider::class, otherwise you will not be able to add new ones to freshly generated controllers.
+
 Configure your .env file with correct database information
+
 Run php artisan quickadmin:install and fill the required information.
-Register middleware 'role' => \Laraveldaily\Quickadmin\Middleware\HasPermissions::class, in your App\Http\Kernel.php at $routeMiddleware
+
+Register middleware 'role' => \dinuka\Quickadmin\Middleware\HasPermissions::class, in your App\Http\Kernel.php at $routeMiddleware
 Access QuickAdmin panel by visiting http://yourdomain/admin.
 
 
