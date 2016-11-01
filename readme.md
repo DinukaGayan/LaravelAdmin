@@ -1,7 +1,7 @@
 Please Do not Download this Project.it is still on Testing
 
 
-composer require dinuka/quickadmin.
+composer require dinuka/quickadmin dev-master.
 
 Add Laraveldaily\Quickadmin\QuickadminServiceProvider::class, to your \config\app.php providers after App\Providers\RouteServiceProvider::class, otherwise you will not be able to add new ones to freshly generated controllers.
 
