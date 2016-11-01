@@ -9,7 +9,7 @@ Configure your .env file with correct database information
 
 Run php artisan quickadmin:install and fill the required information.
 
-Register middleware 'role' => \dinuka\Quickadmin\Middleware\HasPermissions::class, in your App\Http\Kernel.php at $routeMiddleware
+Register middleware 'role' => \Laraveldaily\Quickadmin\Middleware\HasPermissions::class, in your App\Http\Kernel.php at $routeMiddleware
 Access QuickAdmin panel by visiting http://yourdomain/admin.
 
 
