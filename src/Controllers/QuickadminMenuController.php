@@ -15,6 +15,7 @@ use Laraveldaily\Quickadmin\Builders\ViewsBuilder;
 use Laraveldaily\Quickadmin\Cache\QuickCache;
 use Laraveldaily\Quickadmin\Fields\FieldsDescriber;
 use Laraveldaily\Quickadmin\Models\Menu;
+use Session;
 
 class QuickadminMenuController extends Controller
 {
